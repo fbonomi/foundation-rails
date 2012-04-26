@@ -192,8 +192,9 @@ jQuery(document).ready(function ($) {
       if ($associatedElement.attr('type') === 'checkbox') {
         event.preventDefault();
         $customCheckbox = $(this).find('span.custom.checkbox');
-        if $customCheckbox.empty?
+        if ($customCheckbox.empty != null) {
           $customCheckbox = $(this).prev();
+        }
         toggleCheckbox($customCheckbox);
       } else if ($associatedElement.attr('type') === 'radio') {
         event.preventDefault();
