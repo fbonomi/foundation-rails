@@ -192,16 +192,12 @@ jQuery(document).ready(function ($) {
       if ($associatedElement.attr('type') === 'checkbox') {
         event.preventDefault();
         $customCheckbox = $(this).find('span.custom.checkbox');
-        if ($customCheckbox.empty?) {
+        if $customCheckbox.empty?
           $customCheckbox = $(this).prev();
-        }
         toggleCheckbox($customCheckbox);
       } else if ($associatedElement.attr('type') === 'radio') {
         event.preventDefault();
         $customRadio = $(this).find('span.custom.radio');
-        if ($customRadio.empty?) {
-          $customRadio = $(this).prev();
-        }
         toggleRadio($customRadio);
       }
     }
